@@ -1,0 +1,14 @@
+<section id="inspiraciones">
+  <h2>Artistas que me inspiran</h2>
+  <div class="artista">
+    <img src="img/deftones.jpg" alt="Deftones">
+    <h3>Deftones</h3>
+    <p>Descripción de por qué me inspiran …</p>
+  </div>
+  <div class="artista">
+    <img src="img/blackpink.jpg" alt="BLACKPINK">
+    <h3>BLACKPINK</h3>
+    <p>…</p>
+  </div>
+  <!-- más artistas -->
+</section>
