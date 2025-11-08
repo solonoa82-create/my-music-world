@@ -11,25 +11,25 @@ document.addEventListener("DOMContentLoaded", () => {
     artemas: {
       nombre: "Artemas",
       descripcion: "Artemas te sumerge en su musica hot combinando pop alternativo con toques melancólicos. Sus letras pegadizas me obsesionaron y el aura que crea con sus synthetizadores es impresionante.",
-      linkSpotify: "https://open.spotify.com/intl-es/artist/0PCCGZ0wGLizHt2KZ7hhA2?si=f6RmJMLFRnGHqpesriNpKw",
+      linkSpotify: "https://open.spotify.com/artist/0PCCGZ0wGLizHt2KZ7hhA2",
       linkWeb: "#" // aquí puedes poner el link a otra sección de tu bloc
     },
     rojuu: {
       nombre: "Rojuu",
       descripcion: "Rojuu un artista emergente super importante y genial de la puesta en escena española. Utiliza diversos generos volviendolos suyos. Una estetica tan personal y genuina.",
-      linkSpotify: "https://open.spotify.com/intl-es/artist/04mTej6RpWzBxGwhfThpIi?si=qMFWuNekT-emhw9YhRLPQA",
+      linkSpotify: "https://open.spotify.com/artist/04mTej6RpWzBxGwhfThfIi",
       linkWeb: "#"
     },
     "depresion sonora": {
       nombre: "Depresión Sonora",
       descripcion: "Proyecto post-punk de Marcos Crespo. Letras que rompen, un sonido que consuela a los adolescentes mas deprimidos y una musica inolvidable.",
-      linkSpotify: "https://open.spotify.com/intl-es/artist/2oCrGFAUJwBVFaaIM8c0AO?si=newGgoq0Qg-t0362m4pQng",
+      linkSpotify: "https://open.spotify.com/artist/2oCrGFAUJwBVFaaIM8c0AO",
       linkWeb: "#"
     },
     wisp: {
       nombre: "Wisp",
       descripcion: "Wisp una artista que te envuelve y no te deha salir, Shoegaze y dreampop etéreo. Una voz cristalina que te devora sin notarlo y su musica que te hace olvidar hasta lo mas inolvidable para fundirte en el abismo.",
-      linkSpotify: "https://open.spotify.com/intl-es/artist/3TJZG17pjOKXwx1ELKJPfm?si=Ibaxamz4Sj-nRVKEVLjv2A",
+      linkSpotify: "https://open.spotify.com/artist/3TJZG17pjOKXwx1ELKJPfm",
       linkWeb: "#"
     }
   };
@@ -65,4 +65,5 @@ document.addEventListener("DOMContentLoaded", () => {
     info.classList.add("oculto");
   });
 });
+
 
