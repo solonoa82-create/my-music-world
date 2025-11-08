@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>My music world</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>My music world</h1>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Hola, ¡soy Noa!</h2>
+      <p>Bienvenid@ a mi mundo musical.</p>
+      <p>Aquí compartiré los géneros y artistas musicales que me inspiran y amo.</p>
+      <p>Mis proyectos musicales y cosas que me gustan de la música.</p>
+
+      <iframe class="widget-musica"
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/4cu0SWN5zrbrgcPWx8r2nj?utm_source=generator"
+        width="800"
+        height="300"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+        loading="lazy">
+      </iframe>
+
+      <div class="intro-collage">
+        <img src="https://i.pinimg.com/1200x/3a/21/b7/3a21b761ffc05b6508660a4e09d5d0f2.jpg" alt="Foto 1">
+        <img src="https://i.pinimg.com/1200x/7b/3c/5c/7b3c5c86129de4e50cdc9c916c310b91.jpg" alt="Foto 2">
+        <img src="https://i.pinimg.com/736x/2e/ea/e4/2eeae48e521c7951d54f207939da7eaa.jpg" alt="Foto 3">
+      </div>
+    </section>
+
+    <section id="selector-artistas">
+      <h2>Selecciona un artista</h2>
+      <p class="descripcion-artistas">Estos artistas me han inspirado MUCHO en mi música ♡</p>
+
+      <div class="grid-artistas">
+        <div class="artista" data-id="artemas">
+          <img src="https://i.pinimg.com/736x/1b/15/69/1b15692b7f383fad8037fe44f4c37c66.jpg" alt="Artemas">
+          <p>Artemas</p>
+        </div>
+
+        <div class="artista" data-id="rojuu">
+          <img src="https://i.pinimg.com/736x/a2/a0/c2/a2a0c25d68e3b5a5ab2471e5486b69bb.jpg" alt="Rojuu">
+          <p>Rojuu</p>
+        </div>
+
+        <div class="artista" data-id="depresion sonora">
+          <img src="https://i.pinimg.com/1200x/a9/bc/5e/a9bc5ef25d3bf1cf6799f3b5d011c4b5.jpg" alt="Depresión sonora">
+          <p>Depresión sonora</p>
+        </div>
+
+        <div class="artista" data-id="wisp">
+          <img src="https://i.pinimg.com/736x/74/bf/1c/74bf1cfb4572343b9ca2b55893b410b2.jpg" alt="Wisp">
+          <p>Wisp</p>
+        </div>
+      </div>
+
+      <div id="info-artista" class="info oculto" aria-live="polite">
+        <button id="cerrar-info" aria-label="Cerrar">✕</button>
+        <h3 id="nombre-artista"></h3>
+        <p id="descripcion-artista"></p>
+        <a id="link-mas-web" href="#">Ver más detalles</a>
+        <a id="link-mas" href="#" target="_blank">Escuchar en Spotify</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
