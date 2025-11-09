@@ -228,16 +228,66 @@ body {
 .info {
   text-align: left;
 }
-section {
-  background-color: rgba(255, 255, 255, 0.1); /* color sutil de fondo */
-  backdrop-filter: blur(5px); /* efecto como de hoja o cristal */
-  border-radius: 20px;
-  padding: 60px 40px;
-  margin: 80px auto; /* deja espacio entre secciones */
-  width: 80%; /* no ocupa toda la pantalla, se ve más ordenado */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+/* === Hoja / sección: look "tarjeta" y separación clara === */
+html {
+  scroll-behavior: smooth; /* scroll suave */
 }
+
+/* Aplica a todas las secciones, pero con suficiente especificidad para vencer overrides */
+main section,
+section {
+  background: linear-gradient(180deg, rgba(26,26,26,0.65), rgba(44,44,44,0.55)); /* degradado semitransparente */
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px); /* efecto cristal/hoja */
+  border: 1px solid rgba(255,182,193,0.06);
+  border-radius: 18px;
+  padding: 60px 40px;
+  margin: 70px auto;   /* espacio entre secciones */
+  width: min(1100px, 90%); /* adaptativo y centrado */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  color: #f9b3d1; /* aseguramos contraste */
+  box-sizing: border-box;
+}
+
+/* Si hay secciones con IDs específicas que quieres que se vean iguales */
+#intro, #selector-artistas, #mi-musica, #generos, #sensorial, #secret, #mas {
+  /* nada extra necesario aquí, la regla general ya cubre */
+}
+
+/* Ajustes móviles: menos padding para pantallas pequeñas */
+@media (max-width: 700px) {
+  main section,
+  section {
+    padding: 30px 20px;
+    margin: 40px 10px;
+    width: calc(100% - 20px);
+  }
+}
+
+/* Si tu CSS previo estaba forzando text-align:center, aseguramos que los textos dentro de las secciones queden a la izquierda */
+main section,
+section {
+  text-align: left;
+}
+
+/* Titulares dentro de la "hoja" */
+main section h2 {
+  margin-top: 0;
+  font-size: clamp(1.6rem, 3vw, 2.8rem);
+  color: #ffd6ee;
+  text-shadow: 1px 1px 5px rgba(255,105,180,0.08);
+}
+
+/* si alguna regla anterior hiciera invisible el fondo, fuerza la visibilidad */
+main section {
+  background-clip: padding-box;
+}
+
+/* Si por seguridad necesitas forzar (último recurso) descomenta la línea siguiente */
+/* main section { background: rgba(26,26,26,0.85) !important; } */
+
 html {
   scroll-behavior: smooth;
 }
+
 
