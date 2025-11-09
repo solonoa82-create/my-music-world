@@ -217,3 +217,12 @@ html {
     width: calc(100% - 20px);
   }
 }
+
+#intro {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  }
