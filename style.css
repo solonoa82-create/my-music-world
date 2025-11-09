@@ -35,6 +35,8 @@ h1 {
 
 #intro h2 {
   font-size: 4rem;
+  color: #f9b3d1; /* mismo color que header */
+  text-shadow: 2px 2px 6px #ff69b4; /* igual que header */
   margin-bottom: 5px;
   text-shadow: 2px 2px 5px #ff69b4;
 }
@@ -289,8 +291,6 @@ main section {
 html {
   scroll-behavior: smooth;
 }
-#intro {
-  background: linear-gradient(180deg, #1a
 
 
 
