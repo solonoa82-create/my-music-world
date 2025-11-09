@@ -1,11 +1,14 @@
+/* ===== Base ===== */
 body {
   font-family: 'Pixelify Sans', sans-serif;
-  background-color: #0f0f0f; /* fondo oscuro */
-  color: #f9b3d1; /* texto rosado claro */
+  background: linear-gradient(180deg, #1a1a1a, #2c2c2c);
+  color: #f9b3d1;
   margin: 0;
+  padding: 0;
   text-align: center;
 }
 
+/* ===== Header ===== */
 header {
   background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
   padding: 40px;
@@ -13,7 +16,7 @@ header {
   box-shadow: 0 4px 15px rgba(255, 182, 193, 0.2);
 }
 
-h1 {
+header h1 {
   font-size: 5rem;
   color: #f9b3d1;
   text-shadow: 2px 2px 6px #ff69b4;
@@ -21,23 +24,20 @@ h1 {
   margin: 0;
 }
 
+/* ===== Intro ===== */
 #intro {
-  position: relative; /* permite colocar imágenes dentro */
+  position: relative;
   padding: 5px 5px 50px 40px;
-  background: linear-gradient(180deg, #1a1a1a, #2c2c2c);
-  color: #f9b3d1;
+  min-height: 100vh;
   text-align: left;
-  width: 100%;
-  min-height: 100vh;  
-  padding-left: 40px;
   box-sizing: border-box;
 }
-#intro > h2 {
+
+#intro h2 {
   font-size: 4rem;
   color: #f9b3d1; /* mismo color que header */
   text-shadow: 2px 2px 6px #ff69b4; /* igual que header */
   margin-bottom: 5px;
-  text-shadow: 2px 2px 5px #ff69b4;
 }
 
 #intro p {
@@ -45,62 +45,76 @@ h1 {
   line-height: 1.6;
 }
 
-/* 🌸 Collage de imágenes */
+/* ===== Collage de imágenes ===== */
 .intro-collage {
   position: absolute;
   top: 50px;
   right: 100px;
 }
 
-/* Ajustes generales de las imágenes */
 .intro-collage img {
-  width: 200px;  /* 👈 cambia este valor para hacerlas más grandes o pequeñas */
+  width: 200px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
   transition: transform 0.3s;
-  position: absolute; /* permite moverlas libremente */
+  position: absolute;
 }
 
-/* 🔹 Imagen 1 */
-.intro-collage img:nth-child(1) {
-  top: -25;
-  right: 0;
-}
-
-/* 🔹 Imagen 2 */
-.intro-collage img:nth-child(2) {
-  top: 100px;
-  right: 160px; /* más hacia la izquierda */
-}
-
-/* 🔹 Imagen 3 */
-.intro-collage img:nth-child(3) {
-  top: 250px;
-  right: 0px;
-}
+.intro-collage img:nth-child(1) { top: -25px; right: 0; }
+.intro-collage img:nth-child(2) { top: 100px; right: 160px; }
+.intro-collage img:nth-child(3) { top: 250px; right: 0; }
 
 .intro-collage img:hover {
-  transform: scale(1.05); /* efecto zoom al pasar el ratón */
+  transform: scale(1.05);
 }
 
-
-/* base */
-body {
-  font-family: 'Pixelify Sans', sans-serif;
-  background: #0f0f0f;
+/* ===== Secciones generales ===== */
+main section,
+section {
+  background: linear-gradient(180deg, rgba(26,26,26,0.65), rgba(44,44,44,0.55));
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,182,193,0.06);
+  border-radius: 18px;
+  padding: 60px 40px;
+  margin: 70px auto;
+  width: min(1100px, 90%);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
   color: #f9b3d1;
-  margin: 0;
-  padding: 0;
+  text-align: left;
+  box-sizing: border-box;
 }
 
-/* sección */
+/* ===== Títulos de secciones ===== */
+main section h2 {
+  font-size: clamp(1.6rem, 3vw, 2.8rem);
+  color: #ffd6ee; /* color ligeramente más suave que intro/header */
+  text-shadow: 1px 1px 5px rgba(255,105,180,0.08);
+  margin-top: 0;
+}
+
+/* ===== Selector de artistas ===== */
 #selector-artistas {
   padding: 40px 20px;
   text-align: center;
 }
 
-/* grid */
+#selector-artistas h2 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px #ff69b4;
+  color: #f9b3d1;
+}
+
+.descripcion-artistas {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffb6c1;
+  text-shadow: 1px 1px 4px #ff69b4;
+}
+
+/* Grid de artistas */
 .grid-artistas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -110,7 +124,6 @@ body {
   align-items: start;
 }
 
-/* tarjeta artista */
 .artista {
   background: #121212;
   border-radius: 12px;
@@ -137,7 +150,6 @@ body {
   color: #f9b3d1;
 }
 
-/* hover + foco: efecto arcade */
 .artista:hover, .artista:focus {
   transform: translateY(-6px) scale(1.03);
   border-color: #ffb6c1;
@@ -145,13 +157,12 @@ body {
   outline: none;
 }
 
-/* tarjeta seleccionada */
 .artista.seleccionado {
   box-shadow: 0 0 28px #ffb6c1, 0 0 48px rgba(255,105,180,.2);
   transform: scale(1.05);
 }
 
-/* panel info */
+/* Panel info artista */
 .info {
   max-width: 760px;
   margin: 26px auto 60px;
@@ -162,6 +173,8 @@ body {
   position: relative;
   color: #f9b3d1;
   box-shadow: 0 8px 30px rgba(255,182,193,0.06);
+  z-index: 100;
+  text-align: left;
 }
 
 .info.mostrar {
@@ -179,8 +192,7 @@ body {
   cursor: pointer;
 }
 
-/* enlace "Leer más" */
-#link-mas {
+#link-mas, #link-mas-web {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 12px;
@@ -190,72 +202,13 @@ body {
   text-decoration: none;
   border: 1px solid rgba(255,182,193,.06);
 }
-body {
-  background: linear-gradient(180deg, #1a1a1a, #2c2c2c);
-}
-#intro, #selector-artistas {
-  background: transparent;
-}
-#selector-artistas h2 {
-  font-size: 4rem;          /* tamaño grande como el header */
-  margin-bottom: 30px;      /* espacio antes de la cuadrícula de artistas */
-  text-shadow: 2px 2px 6px #ff69b4;  /* efecto arcade rosa */
-  color: #f9b3d1;           /* mismo color que el header */
-}
 
-.oculto { display: none; }
-.info {
-  max-width: 760px;
-  margin: 26px auto 60px;
-  background: linear-gradient(180deg, #1a1a1a, #272727);
-  padding: 18px 20px;
-  border-radius: 12px;
-  display: none; /* oculto por defecto */
-  position: relative;
-  color: #f9b3d1;
-  box-shadow: 0 8px 30px rgba(255,182,193,0.06);
-  z-index: 100;
-}
-
-.info.mostrar {
-  display: block; /* se muestra cuando JS agrega la clase "mostrar" */
-}
-.descripcion-artistas {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #ffb6c1;
-  text-shadow: 1px 1px 4px #ff69b4;
-}
-.info {
-  text-align: left;
-}
-/* === Hoja / sección: look "tarjeta" y separación clara === */
+/* ===== Scroll suave ===== */
 html {
-  scroll-behavior: smooth; /* scroll suave */
+  scroll-behavior: smooth;
 }
 
-/* Aplica a todas las secciones, pero con suficiente especificidad para vencer overrides */
-main section,
-section {
-  background: linear-gradient(180deg, rgba(26,26,26,0.65), rgba(44,44,44,0.55)); /* degradado semitransparente */
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px); /* efecto cristal/hoja */
-  border: 1px solid rgba(255,182,193,0.06);
-  border-radius: 18px;
-  padding: 60px 40px;
-  margin: 70px auto;   /* espacio entre secciones */
-  width: min(1100px, 90%); /* adaptativo y centrado */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
-  color: #f9b3d1; /* aseguramos contraste */
-  box-sizing: border-box;
-}
-
-/* Si hay secciones con IDs específicas que quieres que se vean iguales */
-#intro, #selector-artistas, #mi-musica, #generos, #sensorial, #secret, #mas {
-  /* nada extra necesario aquí, la regla general ya cubre */
-}
-
-/* Ajustes móviles: menos padding para pantallas pequeñas */
+/* ===== Ajustes móviles ===== */
 @media (max-width: 700px) {
   main section,
   section {
@@ -264,33 +217,3 @@ section {
     width: calc(100% - 20px);
   }
 }
-
-/* Si tu CSS previo estaba forzando text-align:center, aseguramos que los textos dentro de las secciones queden a la izquierda */
-main section,
-section {
-  text-align: left;
-}
-
-/* Titulares dentro de la "hoja" */
-main section h2 {
-  margin-top: 0;
-  font-size: clamp(1.6rem, 3vw, 2.8rem);
-  color: #ffd6ee;
-  text-shadow: 1px 1px 5px rgba(255,105,180,0.08);
-}
-
-/* si alguna regla anterior hiciera invisible el fondo, fuerza la visibilidad */
-main section {
-  background-clip: padding-box;
-}
-
-/* Si por seguridad necesitas forzar (último recurso) descomenta la línea siguiente */
-/* main section { background: rgba(26,26,26,0.85) !important; } */
-
-html {
-  scroll-behavior: smooth;
-}
-
-
-
-
