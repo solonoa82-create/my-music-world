@@ -66,6 +66,52 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+#generos {
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #0d001a, #1c0028);
+  color: #fff;
+  text-align: center;
+}
+
+#generos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.genero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background: rgba(255, 77, 196, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  gap: 20px;
+  transition: transform 0.2s;
+}
+
+.genero img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.genero .info h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  color: #ff4dc4;
+}
+
+.genero .info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ffc9f2;
+}
+
+.genero:hover {
+  transform: translateY(-5px);
+}
+
 
 
 
