@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const datosArtistas = {
     artemas: {
       nombre: "Artemas",
-      descripcion: "Artemas te sumerge en su musica combinando pop alternativo con toques melancólicos. Sus letras pegadizas obsesionan y el aura que crea con sus synthetizadores es impresionante.",
+      descripcion: "Artemas te sumerge en su musica, combinando pop alternativo con toques melancólicos. Sus letras pegadizas obsesionan y el aura que crea con sus synthetizadores es impresionante.",
       linkSpotify: "https://open.spotify.com/artist/0PCCGZ0wGLizHt2KZ7hhA2",
       linkWeb: "#" // aquí puedes poner el link a otra sección de tu bloc
     },
@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     info.classList.add("oculto");
   });
 });
+
 
 
 
