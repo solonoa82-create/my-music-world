@@ -10,19 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const datosArtistas = {
     artemas: {
       nombre: "Artemas",
-      descripcion: "Artemas te sumerge en su musica hot combinando pop alternativo con toques melancólicos. Sus letras pegadizas me obsesionaron y el aura que crea con sus synthetizadores es impresionante.",
+      descripcion: "Artemas te sumerge en su musica combinando pop alternativo con toques melancólicos. Sus letras pegadizas obsesionan y el aura que crea con sus synthetizadores es impresionante.",
       linkSpotify: "https://open.spotify.com/artist/0PCCGZ0wGLizHt2KZ7hhA2",
       linkWeb: "#" // aquí puedes poner el link a otra sección de tu bloc
     },
     rojuu: {
       nombre: "Rojuu",
-      descripcion: "Rojuu un artista emergente super importante y genial de la puesta en escena española. Utiliza diversos generos volviendolos suyos. Una estetica tan personal y genuina.",
+      descripcion: "Rojuu un artista emergente super importante de la puesta en escena española mas indie. Utiliza diversos generos volviendolos suyos. Una estetica muy personal y genuina.",
       linkSpotify: "https://open.spotify.com/artist/04mTej6RpWzBxGwhfThfIi",
       linkWeb: "#"
     },
     "depresion sonora": {
       nombre: "Depresión Sonora",
-      descripcion: "Proyecto post-punk de Marcos Crespo. Letras que rompen, un sonido que consuela a los adolescentes mas deprimidos y una musica inolvidable.",
+      descripcion: "Proyecto post-punk de Marcos Crespo. Letras que rompen, un sonido que consuela a los mas deprimidos y una musica inolvidable.",
       linkSpotify: "https://open.spotify.com/artist/2oCrGFAUJwBVFaaIM8c0AO",
       linkWeb: "#"
     },
@@ -65,5 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     info.classList.add("oculto");
   });
 });
+
 
 
