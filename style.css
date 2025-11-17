@@ -29,10 +29,15 @@ header h1 {
 /* INTRO */
 #intro {
   position: relative;
-  padding: 5px 5px 50px 40px;
-  min-height: 100vh;
   text-align: left;
   box-sizing: border-box;
+  min-height: 100vh;           /* opcional, para que ocupe toda la pantalla */
+  padding: 50px 40px 50px 40px; /* ajusta espacio interno */
+  
+  background: none !important;  /* quita fondo */
+  box-shadow: none !important;  /* quita sombra */
+  border: none !important;      /* quita borde */
+  margin: 0 !important;         /* quita márgenes */
 }
 
 #intro h2 {
@@ -63,9 +68,9 @@ header h1 {
   position: absolute;
 }
 
-.intro-collage img:nth-child(1) { top: -25px; right: -50px; }
+.intro-collage img:nth-child(1) { top: -25px; right: 0px; }
 .intro-collage img:nth-child(2) { top: 100px; right: 160px; }
-.intro-collage img:nth-child(3) { top: 250px; right: -50px; }
+.intro-collage img:nth-child(3) { top: 250px; right: 0px; }
 
 .intro-collage img:hover {
   transform: scale(1.05);
@@ -254,5 +259,6 @@ main section h2 {
     height: auto;
   }
 }
+
 
 
