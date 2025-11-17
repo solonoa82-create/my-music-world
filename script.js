@@ -5,36 +5,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const descripcion = document.getElementById("descripcion-artista");
   const link = document.getElementById("link-mas");
   const btnCerrar = document.getElementById("cerrar-info");
-  const linkExtra = document.getElementById("link-mas-web"); // si lo tienes en HTML
+  const linkExtra = document.getElementById("link-mas-web");
 
   const datosArtistas = {
     artemas: {
       nombre: "Artemas",
-      descripcion: "Artemas te sumerge en su musica, combinando pop alternativo con toques melancólicos. Sus letras pegadizas obsesionan y el aura que crea con sus synthetizadores es impresionante.",
+      descripcion: "Artemas te sumerge en su música, combinando pop alternativo con toques melancólicos. Sus letras pegadizas obsesionan y el aura que crea con sus sintetizadores es impresionante.",
       linkSpotify: "https://open.spotify.com/artist/0PCCGZ0wGLizHt2KZ7hhA2",
-      linkWeb: "#" // aquí puedes poner el link a otra sección de tu bloc
+      linkWeb: "#"
     },
     rojuu: {
       nombre: "Rojuu",
-      descripcion: "Rojuu un artista emergente super importante de la puesta en escena española mas indie. Utiliza diversos generos volviendolos suyos. Una estetica muy personal y genuina.",
+      descripcion: "Rojuu un artista emergente super importante de la puesta en escena española más indie. Utiliza diversos géneros volviéndolos suyos. Una estética muy personal y genuina.",
       linkSpotify: "https://open.spotify.com/artist/04mTej6RpWzBxGwhfThfIi",
       linkWeb: "#"
     },
     "depresion sonora": {
       nombre: "Depresión Sonora",
-      descripcion: "Proyecto post-punk de Marcos Crespo. Letras que rompen, un sonido que consuela a los mas deprimidos y una musica inolvidable.",
+      descripcion: "Proyecto post-punk de Marcos Crespo. Letras que rompen, un sonido que consuela a los más deprimidos y una música inolvidable.",
       linkSpotify: "https://open.spotify.com/artist/2oCrGFAUJwBVFaaIM8c0AO",
       linkWeb: "#"
     },
     wisp: {
       nombre: "Wisp",
-      descripcion: "Wisp una artista que te envuelve y no te deha salir, Shoegaze y dreampop etéreo. Una voz cristalina que te devora sin notarlo y su musica que te hace olvidar hasta lo mas inolvidable para fundirte en el abismo.",
+      descripcion: "Wisp es una artista que te envuelve y no te deja salir, Shoegaze y dreampop etéreo. Una voz cristalina que te devora sin notarlo y su música que te hace olvidar hasta lo más inolvidable.",
       linkSpotify: "https://open.spotify.com/artist/3TJZG17pjOKXwx1ELKJPfm",
       linkWeb: "#"
     }
   };
 
-  artistas.forEach((artista) => {
+  artistas.forEach(artista => {
     artista.addEventListener("click", () => {
       const id = artista.dataset.id;
       const datos = datosArtistas[id];
@@ -43,12 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
         nombre.textContent = datos.nombre;
         descripcion.textContent = datos.descripcion;
 
-        // link a Spotify
         link.textContent = "Escuchar en Spotify";
         link.href = datos.linkSpotify;
         link.target = "_blank";
 
-        // link interno a otra sección
         if (linkExtra) {
           linkExtra.textContent = "Ver más detalles";
           linkExtra.href = datos.linkWeb;
@@ -65,53 +63,3 @@ document.addEventListener("DOMContentLoaded", () => {
     info.classList.add("oculto");
   });
 });
-
-#generos {
-  padding: 40px 20px;
-  background: linear-gradient(180deg, #0d001a, #1c0028);
-  color: #fff;
-  text-align: center;
-}
-
-#generos h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.genero {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  background: rgba(255, 77, 196, 0.1);
-  padding: 20px;
-  border-radius: 12px;
-  gap: 20px;
-  transition: transform 0.2s;
-}
-
-.genero img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.genero .info h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.3rem;
-  color: #ff4dc4;
-}
-
-.genero .info p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #ffc9f2;
-}
-
-.genero:hover {
-  transform: translateY(-5px);
-}
-
-
-
-
