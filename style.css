@@ -10,9 +10,7 @@ body {
   text-align: center;
 }
 
-/* ============================================================
-   HEADER
-============================================================ */
+/* HEADER */
 header {
   background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
   padding: 40px;
@@ -28,9 +26,7 @@ header h1 {
   margin: 0;
 }
 
-/* ============================================================
-   INTRO
-============================================================ */
+/* INTRO */
 #intro {
   position: relative;
   padding: 5px 5px 50px 40px;
@@ -67,7 +63,7 @@ header h1 {
   position: absolute;
 }
 
-.intro-collage img:nth-child(1) { top: -25px; right: 300; }
+.intro-collage img:nth-child(1) { top: -25px; right: 300px; }
 .intro-collage img:nth-child(2) { top: 100px; right: 160px; }
 .intro-collage img:nth-child(3) { top: 250px; right: 0; }
 
@@ -75,9 +71,7 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* ============================================================
-   SECCIONES GENERALES
-============================================================ */
+/* SECCIONES GENERALES */
 main section,
 section {
   background: linear-gradient(180deg, rgba(26,26,26,0.65), rgba(44,44,44,0.55));
@@ -100,9 +94,7 @@ main section h2 {
   margin-top: 0;
 }
 
-/* ============================================================
-   ARTISTAS
-============================================================ */
+/* ARTISTAS */
 #selector-artistas {
   padding: 40px 20px;
   text-align: center;
@@ -122,7 +114,6 @@ main section h2 {
   text-shadow: 1px 1px 4px #ff69b4;
 }
 
-/* Grid */
 .grid-artistas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -161,8 +152,8 @@ main section h2 {
   box-shadow: 0 0 18px #ffb6c1;
 }
 
-/* Info artista */
-.info {
+/* INFO ARTISTA */
+.info-artista {
   max-width: 760px;
   margin: 26px auto 60px;
   background: linear-gradient(180deg, #1a1a1a, #272727);
@@ -200,16 +191,7 @@ main section h2 {
   text-decoration: none;
 }
 
-/* ============================================================
-   GENEROS (LIMPIO)
-============================================================ */
-#generos h2 {
-  font-size: 4rem;
-  color: #ffd6ee;
-  text-shadow: 2px 2px 6px #ff69b4;
-  margin-bottom: 20px;
-}
-
+/* GÉNEROS */
 .genero {
   display: flex;
   align-items: flex-start;
@@ -234,17 +216,17 @@ main section h2 {
 }
 
 .genero .info h3 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: #ffb6d9;
   margin: 0 0 10px 0;
 }
 
 .genero .info p {
   color: #f9b3d1;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
-/* Ocultar secciones incompletas */
+/* SECCIONES OCULTAS */
 #mi-musica,
 #sensorial,
 #secret,
@@ -252,21 +234,23 @@ main section h2 {
   display: none;
 }
 
-/* ============================================================
-   MÓVILES
-============================================================ */
+/* MÓVILES */
 @media (max-width: 700px) {
   main section {
     padding: 30px 20px;
     margin: 40px 10px;
   }
+  .intro-collage {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .intro-collage img {
+    position: relative;
+    width: 100px;
+    height: auto;
+  }
 }
-
-#intro {
-  background: none !important;
-  box-shadow: none !important;
-  border: none !important;
-  margin: 0 !important;
-}
-
-
