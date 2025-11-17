@@ -63,7 +63,7 @@ header h1 {
   position: absolute;
 }
 
-.intro-collage img:nth-child(1) { top: -25px; right: 300px; }
+.intro-collage img:nth-child(1) { top: -25px; right: 0px; }
 .intro-collage img:nth-child(2) { top: 100px; right: 160px; }
 .intro-collage img:nth-child(3) { top: 250px; right: 0; }
 
@@ -254,3 +254,4 @@ main section h2 {
     height: auto;
   }
 }
+
