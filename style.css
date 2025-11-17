@@ -296,5 +296,12 @@ html {
   display: block;
 }
 
+#mi-musica,
+#sensorial,
+#secret,
+#mas {
+  display: none;
+}
+
 
 
