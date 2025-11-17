@@ -77,8 +77,8 @@ header h1 {
 }
 
 /* SECCIONES GENERALES */
-main section,
-section {
+main section:not(#intro),
+section:not(#intro) {
   background: linear-gradient(180deg, rgba(26,26,26,0.65), rgba(44,44,44,0.55));
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255,182,193,0.06);
@@ -259,6 +259,7 @@ main section h2 {
     height: auto;
   }
 }
+
 
 
 
