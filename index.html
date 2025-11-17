@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -8,13 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
     <h1>My music world</h1>
   </header>
 
   <main>
+    <!-- INTRO -->
     <section id="intro">
       <h2>¡Hola!</h2>
       <p>Bienvenid@ a mi mundo musical.</p>
@@ -38,6 +38,7 @@
       </div>
     </section>
 
+    <!-- ARTISTAS -->
     <section id="selector-artistas">
       <h2>Selecciona un artista</h2>
       <p class="descripcion-artistas">Estos artistas me han inspirado MUCHO en mi música ♡</p>
@@ -47,17 +48,14 @@
           <img src="https://i.pinimg.com/736x/1b/15/69/1b15692b7f383fad8037fe44f4c37c66.jpg" alt="Artemas">
           <p>Artemas</p>
         </div>
-
         <div class="artista" data-id="rojuu">
           <img src="https://i.pinimg.com/736x/a2/a0/c2/a2a0c25d68e3b5a5ab2471e5486b69bb.jpg" alt="Rojuu">
           <p>Rojuu</p>
         </div>
-
         <div class="artista" data-id="depresion sonora">
           <img src="https://i.pinimg.com/1200x/a9/bc/5e/a9bc5ef25d3bf1cf6799f3b5d011c4b5.jpg" alt="Depresión sonora">
           <p>Depresión sonora</p>
         </div>
-
         <div class="artista" data-id="wisp">
           <img src="https://i.pinimg.com/736x/74/bf/1c/74bf1cfb4572343b9ca2b55893b410b2.jpg" alt="Wisp">
           <p>Wisp</p>
@@ -72,95 +70,88 @@
         <a id="link-mas" href="#" target="_blank">Escuchar en Spotify</a>
       </div>
     </section>
+
+    <!-- MI MÚSICA -->
+    <section id="mi-musica">
+      <h2>Mi música / proyectos</h2>
+      <p>Aquí compartiré mis propias canciones, ideas, bocetos y proyectos musicales 人(´∇｀).</p>
+    </section>
+
+    <!-- GÉNEROS -->
+    <section id="generos">
+      <h2>Géneros</h2>
+      <p>Géneros musicales que me inspiran, información y curiosidades de ellos.</p>
+
+      <div class="genero">
+        <img src="https://i.pinimg.com/736x/8c/fd/dc/8cfddcc6df68e01c77a8128df6461be3.jpg" alt="Shoegaze">
+        <div class="info">
+          <h3>Shoegaze</h3>
+          <p>Género etéreo con guitarras distorsionadas y voces suaves, creado en los 80s en Reino Unido.</p>
+          <p>Este género tiene grupos impresionantes como: My Bloody Valentine, Slowdive y Lusho.</p>
+          <p>En general, lo que más me gusta es cómo envuelve al oyente.</p>
+          <p>Y esta producción "imperfecta" lo hace más especial.</p>
+        </div>
+      </div>
+
+      <div class="genero">
+        <img src="https://i.pinimg.com/1200x/12/ab/85/12ab85586b873c47e5752d8b28d6d542.jpg" alt="Post Punk">
+        <div class="info">
+          <h3>Post Punk</h3>
+          <p>Ritmos oscuros y experimentales que surgieron después del punk, con atmósferas densas.</p>
+          <p>Me alucina la simplicidad más técnica del estilo pero muy característico.</p>
+          <p>En mi opinión, lo más característico son esas baterías tan rítmicas, sólidas y enérgicas.</p>
+        </div>
+      </div>
+
+      <div class="genero">
+        <img src="https://i.pinimg.com/736x/35/56/32/35563264c0ba1b2601eb759a4ffe829d.jpg" alt="Sceneacore">
+        <div class="info">
+          <h3>Sceneacore</h3>
+          <p>Estilo moderno con influencias de metalcore y estética colorida de la cultura scene.</p>
+          <p>A veces ese contraste de instrumental, melodía o voz feliz con letras crudas.</p>
+          <p>Mis artistas favoritos: Rebzyxx y Punkinloveee.</p>
+        </div>
+      </div>
+
+      <div class="genero">
+        <img src="https://i.pinimg.com/736x/25/f7/34/25f734a3d7a7a13be3031894e676a890.jpg" alt="Pop Indie">
+        <div class="info">
+          <h3>Pop Indie</h3>
+          <p>Melodías pegajosas y producción independiente, mezcla de pop y música alternativa.</p>
+          <p>Una variación del pop más experimental, aunque cada vez más común.</p>
+          <p>Con artistas que encantan como: Girl in red, Lana del Rey, Melanie Martinez, Chappell Roan...</p>
+        </div>
+      </div>
+
+      <div class="genero">
+        <img src="https://i.pinimg.com/736x/1b/6e/4e/1b6e4edd994df44b93a368f1a59e3115.jpg" alt="Nu-Metal">
+        <div class="info">
+          <h3>Nu-Metal</h3>
+          <p>Subgénero musical que surgió a mediados de la década de 1990.</p>
+          <p>Fusiona heavy metal con otros géneros como hip hop, funk y grunge.</p>
+          <p>Un género que se odiaba al principio y luego tuvo sus años dorados.</p>
+          <p>Artistas destacados: Deftones, Korn, Linkin Park, Slipknot...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIONES OCULTAS -->
+    <section id="sensorial">
+      <h2>Sensorial</h2>
+      <p>Un espacio más visual y auditivo, quizás pueda traer algo de "ether".</p>
+    </section>
+
+    <section id="secret">
+      <h2>Secret</h2>
+      <p>Algo oculto... quizás un pequeño rincón especial para descubrir.</p>
+    </section>
+
+    <section id="mas">
+      <h2>Más</h2>
+      <p>Otras cosas relacionadas con la música :></p>
+    </section>
   </main>
-  
-<section id="mi-musica">
-  <h2>Mi música / proyectos</h2>
-  <p>Aquí compartiré mis propias canciones, ideas, bocetos y proyectos musicales 人(´∇｀).</p>
-</section>
-
-<section id="generos">
-  <h2>Géneros</h2>
-  <p>Generos musicales que me inspiran, informacion y curiosidades de ellos.</p>
-    <div class="genero">
-    <img src="https://i.pinimg.com/736x/8c/fd/dc/8cfddcc6df68e01c77a8128df6461be3.jpg" alt="Shoegaze">
-    <div class="info-genero">
-      <h3>Shoegaze</h3>
-      <p>Género etéreo con guitarras distorsionadas y voces suaves, creado en los 80s en Reino Unido.</p>
-      <p>Este genero tiene grupos impresionantes como: My Bloody Valentine, Slowdive y Lusho.</p>
-      <p>Es un genero que en general lo que mas me gusta es como envuelve al oyente.</p>
-      <p>Y esta produccion "imperfecta" que le hace mas especial.</p>
-    </div>
-  </div>
-
-  <div class="genero">
-    <img src="https://i.pinimg.com/1200x/12/ab/85/12ab85586b873c47e5752d8b28d6d542.jpg" alt="Post Punk">
-    <div class="info-genero">
-      <h3>Post Punk</h3>
-      <p>Ritmos oscuros y experimentales que surgieron después del punk, con atmósferas densas.</p>
-      <p>Me alucina la simplicidad mas tecnida del estilo pero muy caracteristico en realidad.</p>
-      <p>En la produccion de las cosas mas caracteristicas en mi opinion, son esas baterias tan rítmicas, sólidas y enérgicas</p>
-    </div>
-  </div>
-
-  <div class="genero">
-    <img src="https://i.pinimg.com/736x/35/56/32/35563264c0ba1b2601eb759a4ffe829d.jpg" alt="Sceneacore">
-    <div class="info-genero">
-      <h3>Sceneacore</h3>
-      <p>Estilo moderno con influencias de metalcore y estética colorida de la cultura scene.</p>
-      <p>Estilo moderno con influencias de metalcore y estética colorida de la cultura scene.</p>
-      <p>A veces ese contraste de intrumental, melodia o voz feliz con letras crudas.</p>
-      <p>En este genero unos de mis artistas favoritos son: Rebzyxx y Punkinloveee.</p>
-    </div>
-  </div>
-
-  <div class="genero">
-    <img src="https://i.pinimg.com/736x/25/f7/34/25f734a3d7a7a13be3031894e676a890.jpg" alt="Pop Indie">
-    <div class="info-genero">
-      <h3>Pop Indie</h3>
-      <p>Melodías pegajosas y producción independiente, mezcla de pop y música alternativa.</p>
-      <p>Una variacion del pop mas experimental, aunque cada vez mas común.</p>
-      <p>Con artistas que encantan como: Girl in red, Lana del rey, Melanie Martinez, Chappell Roan...</p>
-    </div>
-  </div>
-
-  <div class="genero">
-    <img src="https://i.pinimg.com/736x/1b/6e/4e/1b6e4edd994df44b93a368f1a59e3115.jpg" alt="Nu-Metal">
-    <div class="info-genero">
-      <h3>Nu-Metal</h3>
-      <p>es un subgénero musical que surgió a mediados de la década de 1990.</p>
-      <p>Fusionando elementos del heavy metal con otros géneros como el hip hop, el funk y el grunge.</p>
-      <p>Un genero que se odio al principio y luego tuvo sus años dorados</p>
-      <p>De sus mejores artistas y que son una gran inspiracion: Deftones, Korn, linking park, Slipknot...</p>
-    </div>
-  </div>
-</section>
-
-
-<section id="sensorial">
-  <h2>Sensorial</h2>
-  <p>Un espacio más visual y auditivivo, quizas pueda traer algo de "ether".</p>
-</section>
-
-<section id="secret">
-  <h2>Secret</h2>
-  <p>Algo oculto... quizás un pequeño rincón especial para descubrir.</p>
-</section>
-
-<section id="mas">
-  <h2>Más</h2>
-  <p>Otras cosas relacionadas con la musica :>.</p>
-</section>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
