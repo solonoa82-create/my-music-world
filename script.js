@@ -12,25 +12,25 @@ document.addEventListener("DOMContentLoaded", () => {
       nombre: "Artemas",
       descripcion: "Artemas te sumerge en su música, combinando pop alternativo con toques melancólicos. Sus letras pegadizas obsesionan y el aura que crea con sus sintetizadores es impresionante.",
       linkSpotify: "https://open.spotify.com/artist/0PCCGZ0wGLizHt2KZ7hhA2",
-      linkWeb: "#"
+      linkWeb: "https://es.wikipedia.org/wiki/Artemas"
     },
     rojuu: {
       nombre: "Rojuu",
       descripcion: "Rojuu un artista emergente super importante de la puesta en escena española más indie. Utiliza diversos géneros volviéndolos suyos. Una estética muy personal y genuina.",
       linkSpotify: "https://open.spotify.com/artist/04mTej6RpWzBxGwhfThfIi",
-      linkWeb: "#"
+      linkWeb: "https://ca.wikipedia.org/wiki/Rojuu"
     },
     "depresion sonora": {
       nombre: "Depresión Sonora",
       descripcion: "Proyecto post-punk de Marcos Crespo. Letras que rompen, un sonido que consuela a los más deprimidos y una música inolvidable.",
       linkSpotify: "https://open.spotify.com/artist/2oCrGFAUJwBVFaaIM8c0AO",
-      linkWeb: "#"
+      linkWeb: "https://sonidomuchacho.com/artistas/depresion-sonora/"
     },
     wisp: {
       nombre: "Wisp",
       descripcion: "Wisp es una artista que te envuelve y no te deja salir, Shoegaze y dreampop etéreo. Una voz cristalina que te devora sin notarlo y su música que te hace olvidar hasta lo más inolvidable.",
       linkSpotify: "https://open.spotify.com/artist/3TJZG17pjOKXwx1ELKJPfm",
-      linkWeb: "#"
+      linkWeb: "https://en.wikipedia.org/wiki/Wisp_(musician)"
     }
   };
 
@@ -63,3 +63,4 @@ document.addEventListener("DOMContentLoaded", () => {
     info.classList.add("oculto");
   });
 });
+
