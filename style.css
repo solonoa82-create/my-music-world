@@ -177,7 +177,7 @@ main section h2 {
   text-align: left;
 }
 
-.info.mostrar {
+.info-artista.mostrar {
   display: block;
 }
 
@@ -302,6 +302,7 @@ html {
 #mas {
   display: none;
 }
+
 
 
 
