@@ -1,4 +1,6 @@
-/* ===== Base ===== */
+/* ============================================================
+   BASE
+============================================================ */
 body {
   font-family: 'Pixelify Sans', sans-serif;
   background: linear-gradient(180deg, #1a1a1a, #2c2c2c);
@@ -8,7 +10,9 @@ body {
   text-align: center;
 }
 
-/* ===== Header ===== */
+/* ============================================================
+   HEADER
+============================================================ */
 header {
   background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
   padding: 40px;
@@ -24,7 +28,9 @@ header h1 {
   margin: 0;
 }
 
-/* ===== Intro ===== */
+/* ============================================================
+   INTRO
+============================================================ */
 #intro {
   position: relative;
   padding: 5px 5px 50px 40px;
@@ -35,8 +41,8 @@ header h1 {
 
 #intro h2 {
   font-size: 4rem;
-  color: #f9b3d1; /* mismo color que header */
-  text-shadow: 2px 2px 6px #ff69b4; /* igual que header */
+  color: #f9b3d1;
+  text-shadow: 2px 2px 6px #ff69b4;
   margin-bottom: 5px;
 }
 
@@ -45,7 +51,7 @@ header h1 {
   line-height: 1.6;
 }
 
-/* ===== Collage de imágenes ===== */
+/* Collage */
 .intro-collage {
   position: absolute;
   top: 50px;
@@ -69,11 +75,12 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* ===== Secciones generales ===== */
+/* ============================================================
+   SECCIONES GENERALES
+============================================================ */
 main section,
 section {
   background: linear-gradient(180deg, rgba(26,26,26,0.65), rgba(44,44,44,0.55));
-  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255,182,193,0.06);
   border-radius: 18px;
@@ -86,15 +93,16 @@ section {
   box-sizing: border-box;
 }
 
-/* ===== Títulos de secciones ===== */
 main section h2 {
   font-size: clamp(1.6rem, 3vw, 2.8rem);
-  color: #ffd6ee; /* color ligeramente más suave que intro/header */
+  color: #ffd6ee;
   text-shadow: 1px 1px 5px rgba(255,105,180,0.08);
   margin-top: 0;
 }
 
-/* ===== Selector de artistas ===== */
+/* ============================================================
+   ARTISTAS
+============================================================ */
 #selector-artistas {
   padding: 40px 20px;
   text-align: center;
@@ -114,14 +122,13 @@ main section h2 {
   text-shadow: 1px 1px 4px #ff69b4;
 }
 
-/* Grid de artistas */
+/* Grid */
 .grid-artistas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 24px;
   max-width: 1000px;
   margin: 24px auto;
-  align-items: start;
 }
 
 .artista {
@@ -130,39 +137,31 @@ main section h2 {
   overflow: hidden;
   cursor: pointer;
   border: 2px solid transparent;
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s;
-  box-shadow: 0 4px 12px rgba(255,182,193,.06);
+  transition: transform .18s ease, box-shadow .18s ease;
   padding-bottom: 8px;
+  box-shadow: 0 4px 12px rgba(255,182,193,.06);
 }
 
 .artista img {
   width: 100%;
   height: 160px;
   object-fit: cover;
-  display: block;
   border-bottom: 2px solid rgba(255,182,193,.06);
 }
 
 .artista p {
   margin: 8px 0;
   font-weight: 600;
-  text-shadow: 0 0 6px rgba(255,105,180,.06);
   color: #f9b3d1;
 }
 
-.artista:hover, .artista:focus {
+.artista:hover {
   transform: translateY(-6px) scale(1.03);
   border-color: #ffb6c1;
-  box-shadow: 0 0 18px #ffb6c1, 0 0 34px rgba(255,105,180,.12);
-  outline: none;
+  box-shadow: 0 0 18px #ffb6c1;
 }
 
-.artista.seleccionado {
-  box-shadow: 0 0 28px #ffb6c1, 0 0 48px rgba(255,105,180,.2);
-  transform: scale(1.05);
-}
-
-/* Panel info artista */
+/* Info artista */
 .info {
   max-width: 760px;
   margin: 26px auto 60px;
@@ -173,7 +172,6 @@ main section h2 {
   position: relative;
   color: #f9b3d1;
   box-shadow: 0 8px 30px rgba(255,182,193,0.06);
-  z-index: 100;
   text-align: left;
 }
 
@@ -200,47 +198,18 @@ main section h2 {
   background: rgba(255,182,193,.06);
   color: #f9b3d1;
   text-decoration: none;
-  border: 1px solid rgba(255,182,193,.06);
 }
 
-/* ===== Scroll suave ===== */
-html {
-  scroll-behavior: smooth;
-}
-
-/* ===== Ajustes móviles ===== */
-@media (max-width: 700px) {
-  main section,
-  section {
-    padding: 30px 20px;
-    margin: 40px 10px;
-    width: calc(100% - 20px);
-  }
-}
-
-#intro {
-  background: none !important;
-  box-shadow: none !important;
-  border: none !important;
-  width: 100% !important;
-  margin: 0 !important;
-  border-radius: 0 !important;
-  }
-/* ===== GENEROS ===== */
-
+/* ============================================================
+   GENEROS (LIMPIO)
+============================================================ */
 #generos h2 {
-  font-size: 4rem;              /* Igual que otros títulos */
+  font-size: 4rem;
   color: #ffd6ee;
   text-shadow: 2px 2px 6px #ff69b4;
   margin-bottom: 20px;
 }
 
-#generos p {
-  font-size: 1.2rem;
-  color: #f9b3d1;
-}
-
-/* Contenedor de cada género */
 .genero {
   display: flex;
   align-items: flex-start;
@@ -250,52 +219,32 @@ html {
   padding: 25px;
   border-radius: 14px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-  transition: transform .2s ease;
+  transition: transform .2s;
 }
 
 .genero:hover {
   transform: translateY(-5px);
 }
 
-/* Imagen del género */
 .genero img {
   width: 180px;
   height: 180px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 182, 193, 0.25);
 }
 
-/* Contenido del texto */
 .genero .info h3 {
-  font-size: 3rem;               /* Título grande como los otros */
+  font-size: 3rem;
   color: #ffb6d9;
   margin: 0 0 10px 0;
-  text-shadow: 1px 1px 4px #ff69b4;
 }
 
 .genero .info p {
-  margin: 6px 0;
-  font-size: 1.2rem;
-  line-height: 1.5;
   color: #f9b3d1;
-}
-#generos h3 {
-  font-size: 2.3rem;
-  color: #ffd6ee;
-  text-shadow: 1px 1px 4px #ff69b4;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-#generos p {
-  color: #ffcee4;
   font-size: 1.2rem;
 }
 
-.info-genero {
-  display: block;
-}
-
+/* Ocultar secciones incompletas */
 #mi-musica,
 #sensorial,
 #secret,
@@ -303,6 +252,19 @@ html {
   display: none;
 }
 
+/* ============================================================
+   MÓVILES
+============================================================ */
+@media (max-width: 700px) {
+  main section {
+    padding: 30px 20px;
+    margin: 40px 10px;
+  }
+}
 
-
-
+#intro {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  margin: 0 !important;
+}
